@@ -33,12 +33,6 @@ An OBO type provider offers a declarative and discoverable way to reference onto
 
 # Results
 
-Type providers for all `[Term]` and `[Typedef]` stanzas in OBO files were implemented, allowing developers to access them as strongly typed properties.  
-An example can be seen in the `sample.fsx` file, where ontology terms from `some_go_terms.obo` (a small subset of the Gene Ontology) are accessed using the type provider.  
-The provider generates types for each term, enabling static type checking and autocompletion in IDEs.
-
-# Results
-
 Type providers for all `[Term]` and `[Typedef]` stanzas in OBO files were implemented, allowing developers to access them as strongly typed properties.
 An example can seen in the `sample.fsx` file, where ontology terms from `some_go_terms.obo` (a small subset from the go ontology) are accessed using the type provider.
 The type provider generates types for each term, enabling static type checking and autocompletion in IDEs.
