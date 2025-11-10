@@ -1,5 +1,5 @@
 ---
-title: 'Report: Hands-On Symposium on ARC Communication and Interoperability 2025'
+title: 'Report: 2nd Hands-On Symposium on ARC Communication and Interoperability 2025'
 title_short: 'Report: 2nd ARC Symposium'
 tags:
   - RDM
@@ -8,6 +8,24 @@ tags:
   - ARC
   - unknown chemical substances
 authors:
+  - name: Heinrich Lukas Weil
+    orcid:
+    affiliation:
+    role:
+  - name: Kevin Schneider
+    orcid:
+    affiliation:
+    role:
+  - name: Stella Eggels
+    orcid: 0000-0001-9436-3109
+    affiliation: DataPLANT
+    role: Writing – original draft
+  - name: Sabrina Zander
+    orcid: 0009-0000-4569-6126
+    affiliation: MibiNet
+    role: Writing – original draft
+
+
   - name: First Author
     affiliation: 1
     role: Writing – original draft
@@ -23,8 +41,8 @@ affiliations:
     index: 2
 date: 8 November 2023
 cito-bibliography: paper.bib
-event: "ARCSymposium2025"
-biohackathon_name: "2nd Hands-On Symposium on ARC Communication and Interoperability 2025"
+event: ARCSMP2025
+biohackathon_name: "2nd Hands-On Symposium on ARC Communication and Interoperability"
 biohackathon_url: "https://nfdi4plants.github.io/events/2025-06-23_kaiserslautern_arc-hackathon/"
 biohackathon_location: "Diemerstein, Germany, 2025"
 # URL to project git repo --- should contain the actual paper.md:
@@ -35,10 +53,85 @@ group: DataPLANT
 authors_short: First Author \emph{et al.}
 ---
 
-
 # Introduction
 
-As part of the BioHackathon Europe 2023, we here report...
+The focus of this years ARC symposium was on improving ARC interoperability with existing research data infrastructures (RDIs) and selected parts of the ARC ecosystem such as validation, FAIR digital object (FDO) publication, and visualization.
+This paper combines all project into a single report. Next year we might split the reports into separate papers.
+
+# Reports
+
+## Project 1: ARC template repositories
+
+### Context
+
+Users that want to initiate a project following the ARC Scaffold structure can directly use ARC templates on the DataHUB.
+A minimal ARC template provides the basic folder structure (`/studies`, `/assays`, `/workflows`, `/runs`, top-level `investigation` metadata descriptor) with explanations in the `README.md` file [CITE ARC SPECS].
+Existing ARC templates were outdated in regards of the ARC specification and no experiment-specific templates were available.
+
+### Consequences
+
+We updated the existing ARC template to the latest version of the ARC specification (at the point of writing VERSION XX) and created two examples of experiment-specific ARC templates (Genomics and Metabolomics).
+These additional experiment-specific ARC templates can provide a starting point for new ARC creators that provide suggestions for suitable studies, assays, and metadata templates in the ISA files, as well as a suggestion for a `README.md` structure.
+
+Template ARCs are currently stored in an arc_templates group on the DataHUB: https://git.nfdi4plants.org/arc_templates.
+We discussed that in the future they should probably be moved to a dedicated repository (e.g., on GitHub), where one repository will be needed per ARC template.
+To not overload the nfdi4plants GitHub organization, an extra arc template organization might be the best solution if there is sufficient usage.
+Once the implementation is finalized, when creating a new project in the DataHUB the option "create from template" allows to select from the different ARC templates and initiate an ARC following their structure.
+All GitLab default templates can most likely be deleted.
+
+![Screenshot of the template selection site on the DataHUB](./images/CreateProjectfromARCTemplates.jpg)
+
+### Automation
+
+The amount of requests and usage of experiment-specific ARC templates should be monitored to decide when to move them to a dedicated repository. 
+
+## Project 2: SQL-to-ARC
+
+### Context
+
+### Consequences
+
+### Automation
+
+## Project 3: ARC Workflow Run RO-Crate Profile integration with Galaxy
+
+### Context
+
+### Consequences
+
+### Automation
+
+## Project 4: OMERO-ARC Interoperability via RO-Crate
+
+### Context
+
+### Consequences
+
+### Automation
+
+## Project 5: Improvements to the ARC FDO publication process
+
+### Context
+
+### Consequences
+
+### Automation
+
+## Project 6: Swate graph view
+
+### Context
+
+### Consequences
+
+### Automation
+
+## Project 7: OntologyProvider
+
+### Context
+
+### Consequences
+
+### Automation
 
 ## Meeting information
 
