@@ -29,6 +29,7 @@ biohackathon_url: "https://nfdi4plants.github.io/events/2025-06-23_kaiserslauter
 biohackathon_location: "Diemerstein, Germany, 2025"
 # URL to project git repo --- should contain the actual paper.md:
 git_url: https://github.com/nfdi4plants/ARC-Symposium
+group:
 # This is the short authors description that is used at the
 # bottom of the generated paper (typically the first two authors):
 authors_short: First Author \emph{et al.}
